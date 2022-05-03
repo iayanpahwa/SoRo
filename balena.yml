@@ -1,6 +1,23 @@
 name: soro
 description: >-
   SoRo aka Social Robot block helps you to post content on Social Media. It exposes a RESTfull API with endpoints to send content at POST request for tweeting or posting on other social media channels.
+
+post-provisioning: >-
+  ## Usage instructions
+  Include this snippet in your docker-compose.yml file under 'services':
+    
+    ```
+    soro:
+      image: bh.cr/g_ayan_pahwa/soro
+    ```
+  Add following environment varibales obtained from twitter developer portal to this block container env varibales on balenaCloud
+  ```
+  ENV CONSUMER_KEY
+  ENV CONSUMER_SECRET
+  ENV ACCESS_TOKEN
+  ENV ACCESS_TOKEN_SECRET
+  ```
+  
 version: 
 type: sw.block
 assets:
