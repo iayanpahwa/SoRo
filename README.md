@@ -10,10 +10,10 @@ SocialRobot a.ka SoRo is a simple RESTfull API to schedule and post on various s
 ## Usage
 Obtain following from twitter developer portal and set them as Environment varibales in block container
 ```
-ENV CONSUMER_KEY
-ENV CONSUMER_SECRET
-ENV ACCESS_TOKEN
-ENV ACCESS_TOKEN_SECRET
+CONSUMER_KEY
+CONSUMER_SECRET
+ACCESS_TOKEN
+ACCESS_TOKEN_SECRET
 ```
 ## Test
 The default API runs on port 5000, endpoint *tweet* can be tested using cURL : 
