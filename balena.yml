@@ -5,17 +5,16 @@ description: >-
 post-provisioning: >-
   ## Usage instructions
   Include this snippet in your docker-compose.yml file under 'services':
-    
     ```
     soro:
       image: bh.cr/g_ayan_pahwa/soro
     ```
   Add following environment varibales obtained from twitter developer portal to this block container env varibales on balenaCloud
   ```
-  ENV CONSUMER_KEY
-  ENV CONSUMER_SECRET
-  ENV ACCESS_TOKEN
-  ENV ACCESS_TOKEN_SECRET
+  - ENV CONSUMER_KEY
+  - ENV CONSUMER_SECRET
+  - ENV ACCESS_TOKEN
+  - ENV ACCESS_TOKEN_SECRET
   ```
   
 version: 
@@ -28,8 +27,13 @@ assets:
   logo:
     type: blob.asset
     data:
-      url: ''
+      url: 'https://raw.githubusercontent.com/iayanpahwa/soro/master/assets/logo.png'
 data:
+  applicationEnvironmentVariables:
+    - CONSUMER_KEY: 
+    - CONSUMER_SECRET:
+    - ACCESS_TOKEN: 
+    - ACCESS_TOKEN_SECRET:
   defaultDeviceType: raspberrypi3
   supportedDeviceTypes:
     - raspberrypi4-64
