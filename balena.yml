@@ -1,13 +1,13 @@
-name: soro
+name: tweet-block
 description: >-
-  SoRo aka Social Robot block helps you to post content on Social Media. It exposes a RESTfull API with endpoints to send content at POST request for tweeting or posting on other social media channels.
+  tweet-block helps you to post content on twitter. It exposes a RESTfull API with endpoints to send content at POST request for tweeting.
 
 post-provisioning: >-
   ## Usage instructions
   Include this snippet in your docker-compose.yml file under 'services':
     ```
     soro:
-      image: bh.cr/g_ayan_pahwa/soro
+      image: bh.cr/g_ayan_pahwa/tweet-block
     ```
   Add following environment varibales obtained from twitter developer portal to this block container env varibales on balenaCloud
   ```
@@ -23,11 +23,11 @@ assets:
   repository:
     type: blob.asset
     data:
-      url: 'https://github.com/iayanpahwa/soro'
+      url: 'https://github.com/iayanpahwa/tweet-block'
   logo:
     type: blob.asset
     data:
-      url: 'https://raw.githubusercontent.com/iayanpahwa/soro/master/assets/logo.png'
+      url: 'https://raw.githubusercontent.com/iayanpahwa/tweet-block/master/assets/logo1.png'
 data:
   applicationEnvironmentVariables:
     - CONSUMER_KEY: 
@@ -41,5 +41,3 @@ data:
     - raspberrypi3
     - raspberrypi3-64
     - raspberrypi400-64
-    - intel-nuc
-    - genericx86-64-ext
