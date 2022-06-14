@@ -6,9 +6,12 @@ tweet-block is a simple RESTfull API to schedule and post on twitter.
 Include this snippet in your docker-compose.yml file under 'services':
 
     ```
+
     tweet-block:
       image: bh.cr/g_ayan_pahwa/tweet-block
+    
     ```
+    
   Add following environment varibales obtained from twitter developer portal to this block container env varibales on balenaCloud:
 
   ```
